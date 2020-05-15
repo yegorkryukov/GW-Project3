@@ -1,10 +1,10 @@
 Plotly.d3.json("/chord", function(error, response) {
 
   // List of titles from JSON data     
-  const titles = ['NewRepublic', 'MotherJones', 'Slate', 'Intercept', 'DailyBeast', 'Atlantic', 'WashPost', 'Politico', 'Guardian', 'BBC', 'Breitbart', 'FoxNews', 'NYPost', 'AmerCons', 'WashTimes', 'DailyWire', 'Reason', 'Hill', 'FiscalTimes', 'OANN'];
+  const titles = ['Atlantic', 'BBC', 'MotherJones', 'NewRepublic', 'Politico', 'Slate', 'DailyBeast', 'Guardian', 'Intercept', 'WashPost', 'AmerCons', 'Breitbart', 'DailyWire', 'Economist', 'FiscalTimes', 'FoxNews', 'NYPost', 'Reason', 'Hill', 'WashTimes'];
   
   // List of site names to show in chord diagram
-  const fullNames = ['New Republic', 'Mother Jones', 'Slate', 'Intercept', 'Daily Beast', 'The Atlantic', 'Washington Post', 'Politico', 'The Guardian', 'BBC', 'Breitbart', 'Fox News', 'NY Post', 'The American Conservative', 'Washington Times', 'Daily Wire', 'Reason', 'The Hill', 'The Fiscal Times', 'OANN']
+  const fullNames = ['Atlantic', 'BBC', 'Mother Jones', 'New Republic', 'Politico', 'Slate', 'Daily Beast', 'Guardian', 'Intercept', 'Washington Post', 'American Cons', 'Breitbart', 'Daily Wire', 'Economist', 'Fiscal Times', 'Fox News', 'NY Post', 'Reason', 'The Hill', 'Washington Times'];
   
   // Blank list used for chord diagram
   let seriesList = [];
@@ -34,7 +34,7 @@ Plotly.d3.json("/chord", function(error, response) {
       "angle-padding": 1,
       "band-width": 10,
       "band-space": 1,
-      "radius": 300,
+      "radius": 200,
       "color-type": "palette",
       "palette": [
         "#1F45FC",
@@ -65,8 +65,8 @@ Plotly.d3.json("/chord", function(error, response) {
         "item": { "visible": false },
         "label": {
           "bold": false,
-          "font-size": "16px",
-          "font-family": "helvetica",
+          "font-size": "13px",
+          "font-family": "arial",
           "angle": 90,
         }
       }
@@ -79,8 +79,8 @@ Plotly.d3.json("/chord", function(error, response) {
   zingchart.render({
     id: 'chordChart',
     data: myConfig,
-    height: '100%', 
-    width: '100%' 
+    height: 700, 
+    width: 700 
   });
 
 }); 

@@ -1,6 +1,8 @@
-# GW-Project3
+# Exploring the Divide
 
-Have you ever wondered why Democrats and Republicans have such polarized views on every aspect of social life? Do they even talk to each other? That's what we explore. 
+Given the current political climate, and the flow of information through the power of words, we wanted to explore the language between left- and right-leaning media sites.
+
+No judgment. No agenda. Just discovery.
 
 We scraped 20 news media outlets (10 from each side of the isle) and analyzed the language using Machine Learning techniques. Visit [http://puddlenet.mindthatdata.com](http://puddlenet.mindthatdata.com) to see the results.
 
